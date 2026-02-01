@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рецепти | QuickTaste — ШВИДКО та смачно!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Навігація -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>QuickTaste</span>
+            </a>
+            
+               <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="index1.html" class="nav-link"><i class="fas fa-book-open"></i> Recipes</a></li>
+                <li><a href="index2.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="index3.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Головний контент -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Заголовок і фільтри -->
+            <header class="recipes-header">
+                <h1 class="page-title">Наші рецепти</h1>
+                <p class="page-subtitle">Швидкі та прості рецепти для щоденного приготування</p>
+                
+                <div class="filter-section">
+                    <div class="filter-tags">
+                        <button class="filter-tag active" data-category="all">Всі рецепти</button>
+                        <button class="filter-tag" data-category="starters">Starters</button>
+                        <button class="filter-tag" data-category="mains">Основні страви</button>
+                        <button class="filter-tag" data-category="desserts">Desserts</button>
+                    </div>
+                    
+                    <div class="search-box">
+                        <input type="text" id="recipeSearch" placeholder="Пошук рецептів...">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Секція Starters -->
+            <section class="category-section" id="starters-section">
+                <h2 class="category-title">Starters</h2>
+                <p class="category-description">Легкі закуски та стартери для початку трапези</p>
+                
+                <div class="recipes-grid">
+                    <!-- Сирні кульки -->
+                    <article class="recipe-card" data-category="starters">
+                        <div class="recipe-image">
+                            <img src="https://shuba.life/static/content/thumbs/1824x912/5/98/iudtdk---c2x1x50px50p-up--8bf2059c19eb415f55d89f9dc36ab985.jpg" alt="Сирні кульки" loading="lazy">
+                            <span class="recipe-badge">Starters</span>
+                            <button class="fav-btn" data-recipe="1"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Сирні кульки</h3>
+                            <p class="recipe-description">Ніжні сирні кульки з часником та зеленню, покриті панірувальними сухарями. Ідеальна закуска до будь-якого столу.</p>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 25 хв</span>
+                                <span><i class="fas fa-user"></i> 4 порції</span>
+                                <span><i class="fas fa-fire"></i> 180 ккал</span>
+                            </div>
+                            <div class="recipe-actions">
+                                <a href="#" class="btn-recipe" data-recipe="1">Детальніше</a>
+                                <button class="btn-save" data-recipe="1"><i class="far fa-bookmark"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Конвертики з лаваша -->
+                    <article class="recipe-card" data-category="starters">
+                        <div class="recipe-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSX6POfTHVi_MEZrq0ScrBbm3y7_i86zLJZw&s" alt="Конвертики з лаваша" loading="lazy">
+                            <span class="recipe-badge">Starters</span>
+                            <button class="fav-btn" data-recipe="2"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Конвертики з лаваша</h3>
+                            <p class="recipe-description">Хрусткі конвертики з лаваша, начиненные сиром, шинкою та зеленню. Запікаються до золотистої скоринки.</p>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 20 хв</span>
+                                <span><i class="fas fa-user"></i> 6 порцій</span>
+                                <span><i class="fas fa-fire"></i> 210 ккал</span>
+                            </div>
+                            <div class="recipe-actions">
+                                <a href="#" class="btn-recipe" data-recipe="2">Детальніше</a>
+                                <button class="btn-save" data-recipe="2"><i class="far fa-bookmark"></i></button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Секція Основні страви -->
+            <section class="category-section" id="mains-section">
+                <h2 class="category-title">Основні страви</h2>
+                <p class="category-description">Ситні та поживні страви для обіду або вечері</p>
+                
+                <div class="recipes-grid">
+                    <!-- Плов з овочами -->
+                    <article class="recipe-card" data-category="mains">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dmVnZXRhYmxlJTIwcGlsYWZ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=80" alt="Плов з овочами" loading="lazy">
+                            <span class="recipe-badge">Основні страви</span>
+                            <button class="fav-btn" data-recipe="3"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Плов з овочами</h3>
+                            <p class="recipe-description">Ароматний плов з різнокольоровими овочами та спеціями. Вегетаріанська версія класичної страви.</p>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 40 хв</span>
+                                <span><i class="fas fa-user"></i> 4 порції</span>
+                                <span><i class="fas fa-fire"></i> 320 ккал</span>
+                            </div>
+                            <div class="recipe-actions">
+                                <a href="#" class="btn-recipe" data-recipe="3">Детальніше</a>
+                                <button class="btn-save" data-recipe="3"><i class="far fa-bookmark"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Картопляники з м'ясом -->
+                    <article class="recipe-card" data-category="mains">
+                        <div class="recipe-image">
+                            <img src="https://i.obozrevatel.com/food/recipemain/2019/4/30/hqdefault.jpg?size=636x424" alt="Картопляники з м'ясом" loading="lazy">
+                            <span class="recipe-badge">Основні страви</span>
+                            <button class="fav-btn" data-recipe="4"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Картопляники з м'ясом</h3>
+                            <p class="recipe-description">Соковиті картопляні оладки з м'ясною начинкою, смажені до золотистої скоринки. Подаються зі сметаною.</p>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 35 хв</span>
+                                <span><i class="fas fa-user"></i> 3 порції</span>
+                                <span><i class="fas fa-fire"></i> 280 ккал</span>
+                            </div>
+                            <div class="recipe-actions">
+                                <a href="#" class="btn-recipe" data-recipe="4">Детальніше</a>
+                                <button class="btn-save" data-recipe="4"><i class="far fa-bookmark"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Стейк з овочами гриль -->
+                    <article class="recipe-card" data-category="mains">
+                        <div class="recipe-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBY6h4yH4VBP9ysijufAGu2nW4on--B8uYHw&s" alt="Стейк з овочами гриль" loading="lazy">
+                            <span class="recipe-badge">Основні страви</span>
+                            <button class="fav-btn" data-recipe="5"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Стейк з овочами гриль</h3>
+                            <p class="recipe-description">Ніжний стейк з овочами гриль. М'ясо з солодкою паприкою, кабачками та баклажанами на грилі.</p>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 30 хв</span>
+                                <span><i class="fas fa-user"></i> 2 порції</span>
+                                <span><i class="fas fa-fire"></i> 350 ккал</span>
+                            </div>
+                            <div class="recipe-actions">
+                                <a href="#" class="btn-recipe" data-recipe="5">Детальніше</a>
+                                <button class="btn-save" data-recipe="5"><i class="far fa-bookmark"></i></button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- Секція Desserts -->
+            <section class="category-section" id="desserts-section">
+                <h2 class="category-title">Desserts</h2>
+                <p class="category-description">Солодкі десерти та випічка для задоволення</p>
+                
+                <div class="recipes-grid">
+                    <!-- Тирамісу -->
+                    <article class="recipe-card" data-category="desserts">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGlyYW1pc3V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=80" alt="Тирамісу" loading="lazy">
+                            <span class="recipe-badge">Desserts</span>
+                            <button class="fav-btn" data-recipe="6"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Тирамісу</h3>
+                            <p class="recipe-description">Класичний італійський десерт з кавово просоченими бісквітами, вершковим кремом маскарпоне та какао.</p>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 45 хв + охолодження</span>
+                                <span><i class="fas fa-user"></i> 6 порцій</span>
+                                <span><i class="fas fa-fire"></i> 420 ккал</span>
+                            </div>
+                            <div class="recipe-actions">
+                                <a href="#" class="btn-recipe" data-recipe="6">Детальніше</a>
+                                <button class="btn-save" data-recipe="6"><i class="far fa-bookmark"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Сирники -->
+                    <article class="recipe-card" data-category="desserts">
+                        <div class="recipe-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGzqyBQjo1wEOGfq4nuMopV99vcP8W9PT0Pw&s" alt="Сирники" loading="lazy">
+                            <span class="recipe-badge">Desserts</span>
+                            <button class="fav-btn" data-recipe="7"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Сирники</h3>
+                            <p class="recipe-description">Традиційні сирники з вершковим сиром, смажені до золотистої скоринки. Подаються з варенням або сметаною.</p>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 25 хв</span>
+                                <span><i class="fas fa-user"></i> 4 порції</span>
+                                <span><i class="fas fa-fire"></i> 230 ккал</span>
+                            </div>
+                            <div class="recipe-actions">
+                                <a href="#" class="btn-recipe" data-recipe="7">Детальніше</a>
+                                <button class="btn-save" data-recipe="7"><i class="far fa-bookmark"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Панкейки -->
+                    <article class="recipe-card" data-category="desserts">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFuY2FrZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=80" alt="Панкейки" loading="lazy">
+                            <span class="recipe-badge">Desserts</span>
+                            <button class="fav-btn" data-recipe="8"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Панкейки</h3>
+                            <p class="recipe-description">Пухкі американські панкейки з кленовим сиропом та ягодами. Ідеальний сніданок або десерт.</p>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 20 хв</span>
+                                <span><i class="fas fa-user"></i> 3 порції</span>
+                                <span><i class="fas fa-fire"></i> 210 ккал</span>
+                            </div>
+                            <div class="recipe-actions">
+                                <a href="#" class="btn-recipe" data-recipe="8">Детальніше</a>
+                                <button class="btn-save" data-recipe="8"><i class="far fa-bookmark"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Ягідний чизкейк -->
+                    <article class="recipe-card" data-category="desserts">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVycnklMjBjaGVlc2VjYWtlfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=80" alt="Ягідний чизкейк" loading="lazy">
+                            <span class="recipe-badge">Desserts</span>
+                            <button class="fav-btn" data-recipe="9"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Ягідний чизкейк</h3>
+                            <p class="recipe-description">Ніжний чизкейк без випікання з вершковим сиром та ягідним соусом. Основа з пісочного печива.</p>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 30 хв + охолодження</span>
+                                <span><i class="fas fa-user"></i> 8 порцій</span>
+                                <span><i class="fas fa-fire"></i> 380 ккал</span>
+                            </div>
+                            <div class="recipe-actions">
+                                <a href="#" class="btn-recipe" data-recipe="9">Детальніше</a>
+                                <button class="btn-save" data-recipe="9"><i class="far fa-bookmark"></i></button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Вафлі з полуницею -->
+                    <article class="recipe-card" data-category="desserts">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2FmZmxlJTIwc3RyYXdiZXJyeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Вафлі з полуницею" loading="lazy">
+                            <span class="recipe-badge">Desserts</span>
+                            <button class="fav-btn" data-recipe="10"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Вафлі з полуницею</h3>
+                            <p class="recipe-description">Хрусткі бельгійські вафлі зі свіжою полуницею, вершками та цукровою пудрою. Десерт мрії!</p>
+                            <div class="recipe-meta">
+                                <span><i class="fas fa-clock"></i> 25 хв</span>
+                                <span><i class="fas fa-user"></i> 4 порції</span>
+                                <span><i class="fas fa-fire"></i> 290 ккал</span>
+                            </div>
+                            <div class="recipe-actions">
+                                <a href="#" class="btn-recipe" data-recipe="10">Детальніше</a>
+                                <button class="btn-save" data-recipe="10"><i class="far fa-bookmark"></i></button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Пагінація -->
+            <div class="pagination">
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <button class="pagination-btn next">Наступна <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>QuickTaste</span>
+                </div>
+                <p class="footer-text">© 2026 QuickTaste. Всі права захищені.</p>
+                <p class="footer-text">Зроблено з <i class="fas fa-heart"></i> для кулінарних ентузіастів</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальне вікно для деталей рецепту -->
+    <div class="modal-overlay" id="recipeModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Контент модального вікна буде динамічно завантажений -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>
