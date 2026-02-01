@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти | QuickTaste — ШВИДКО та смачно!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Навігація -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>QuickTaste</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="index1.html" class="nav-link"><i class="fas fa-book-open"></i> Recipes</a></li>
+                <li><a href="index2.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="index3.html" class="nav-link active"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Головний контент -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Заголовок -->
+            <header class="contact-header">
+                <h1 class="page-title">Зв'яжіться з нами</h1>
+                <p class="page-subtitle">Маєте запитання, пропозиції чи хочете співпрацювати? Ми завжди раді почути вас!</p>
+            </header>
+
+            <div class="contact-content">
+                <!-- Інформаційна секція -->
+                <section class="contact-info-section">
+                    <div class="contact-info-grid">
+                        <!-- Контактна інформація -->
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Наша адреса</h3>
+                            <p>вул. Кулінарна, 15<br>м. Київ, 01001<br>Україна</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>Телефон</h3>
+                            <p>+38 (044) 123-45-67<br>+38 (067) 123-45-67</p>
+                            <p class="contact-hours">Пн-Пт: 9:00-18:00</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Електронна пошта</h3>
+                            <p>info@quicktaste.com<br>support@quicktaste.com</p>
+                            <p class="contact-note">Відповідаємо протягом 24 годин</p>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Графік роботи</h3>
+                            <p>Понеділок - П'ятниця: 9:00-18:00<br>Субота: 10:00-16:00<br>Неділя: вихідний</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Форма зворотного зв'язку -->
+                <section class="contact-form-section">
+                    <div class="form-container">
+                        <h2 class="section-title">Напишіть нам</h2>
+                        <p class="form-subtitle">Заповніть форму нижче і ми зв'яжемося з вами найближчим часом</p>
+                        
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Ваше ім'я *</label>
+                                <input type="text" id="name" name="name" required placeholder="Введіть ваше ім'я">
+                                <div class="error-message" id="nameError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Електронна пошта *</label>
+                                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                                <div class="error-message" id="emailError"></div>
+                            </div>
+                    <div class="form-group">
+    <label for="phone">Телефон</label>
+    <input type="tel" id="phone" name="phone" placeholder="+38 (_) _--">
+    <div class="error-message" id="phoneError"></div>
+</div>
+
+                            
+                           
+                            
+                            <div class="form-group">
+                                <label for="message">Повідомлення *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Опишіть ваше питання або пропозицію..."></textarea>
+                                <div class="error-message" id="messageError"></div>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Так, я хочу отримувати кулінарні поради та новини від QuickTaste</label>
+                                </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="submit-btn" id="submitBtn">
+                                    <span>Надіслати повідомлення</span>
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                                <button type="reset" class="reset-btn">Очистити форму</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+
+            <!-- FAQ секція -->
+            <section class="faq-section">
+                <h2 class="section-title">Часті запитання (FAQ)</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Як додати свій рецепт на сайт?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Ви можете надіслати свій рецепт на нашу електронну пошту recipes@quicktaste.com з описом, інгредієнтами та фотографією. Наша команда перевірить рецепт і опублікує його на сайті з зазначенням вашого авторства.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Чи можна використовувати рецепти з сайту для комерційних цілей?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Рецепти на сайті можна використовувати для особистих цілей. Для комерційного використання (ресторани, кафе, кулінарні книги) необхідно отримати дозвіл. Зв'яжіться з нами для обговорення деталей.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Чи є у вас мобільний додаток?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Так! Наш додаток QuickTaste доступний для iOS та Android. Ви можете завантажити його з App Store або Google Play. У додатку є додаткові функції: список покупок, таймер приготування, офлайн-доступ до рецептів.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Як можна стати частиною вашої команди?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Ми завжди раді талановитим кулінарам, фотографам та контент-менеджерам. Надішліть своє резюме та портфоліо на hr@quicktaste.com. У темі листа вкажіть посаду, на яку претендуєте.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Команда -->
+            <section class="team-section">
+                <h2 class="section-title">Наша команда</h2>
+                <p class="section-subtitle">Професійні кулінари та ентузіасти, які створюють контент для вас</p>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-user-chef"></i>
+                            </div>
+                        <h3>Олена Петренко</h3>
+                        <p class="member-role">Шеф-редактор</p>
+                        <p class="member-bio">Професійний кулінар з 10-річним досвідом. Спеціалізується на українській та європейській кухні.</p>
+                        <div class="member-contact">
+                            <a href="mailto:olena@quicktaste.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-user-chef"></i>
+                        </div>
+                        <h3>Андрій Коваль</h3>
+                        <p class="member-role">Кулінарний експерт</p>
+                        <p class="member-bio">Майстер світової кухні. Проводить майстер-класи та розробляє рецепти для складних страв.</p>
+                        <div class="member-contact">
+                            <a href="mailto:andriy@quicktaste.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <h3>Марія Сидоренко</h3>
+                        <p class="member-role">Фотограф їжі</p>
+                        <p class="member-bio">Створює апетитні фотографії для наших рецептів. Працювала з відомими кулінарними журналами.</p>
+                        <div class="member-contact">
+                            <a href="mailto:maria@quicktaste.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Іван Мельник</h3>
+                        <p class="member-role">Підтримка користувачів</p>
+                        <p class="member-bio">Допомагає користувачам з технічними питаннями та приймає пропозиції щодо покращення сайту.</p>
+                        <div class="member-contact">
+                            <a href="mailto:ivan@quicktaste.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>QuickTaste</span>
+                </div>
+                <p class="footer-text">© 2023 QuickTaste. Всі права захищені.</p>
+                <p class="footer-text">Зроблено з <i class="fas fa-heart"></i> для кулінарних ентузіастів</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальне вікно успіху -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-content success-modal">
+            <button class="modal-close" id="closeSuccessModal">&times;</button>
+            <div class="modal-body">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Дякуємо за звернення!</h2>
+                <p>Ваше повідомлення успішно відправлено. Ми зв'яжемося з вами найближчим часом.</p>
+                <button class="btn-ok" id="okBtn">Добре</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="script3.js"></script>
+</body>
+</html>
