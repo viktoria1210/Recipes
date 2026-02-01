@@ -1,0 +1,537 @@
+/* Стилі сторінки "Про нас" */
+
+/* Герой секція */
+.about-hero {
+    background: linear-gradient(135deg, #e74c3c 0%, #fad0c4 100%);
+    padding: 100px 0 80px;
+    text-align: center;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.about-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-subtitle {
+    font-size: 22px;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* Історія */
+.story-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.story-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.quote {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 4px solid #e74c3c;
+    margin: 40px 0;
+    position: relative;
+}
+
+.quote i.fa-quote-left {
+    color: #e74c3c;
+    font-size: 24px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.quote p {
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.quote cite {
+    font-weight: 600;
+    color: #e74c3c;
+    font-style: normal;
+}
+
+.story-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Місія */
+.mission-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2a2a2a;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 50px;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.mission-card {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-10px);
+}
+
+.mission-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #e74c3c 0%, #ffffff 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    color: white;
+    font-size: 32px;
+}
+
+.mission-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #2a2a2a;
+}
+
+.mission-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Команда */
+.team-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.team-member {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.member-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 25px;
+    border: 5px solid #f8f9fa;
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #2a2a2a;
+}
+
+.member-role {
+    color: #e74c3c;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.member-bio {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.member-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.member-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #f8f9fa;
+    color: #555;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.member-social a:hover {
+    background-color: #e74c3c;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Статистика */
+.stats-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #2a2a2a 0%, #4a4a4a 100%);
+    color: white;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 30px;
+}
+
+.stat-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #e74c3c;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* Відгуки */
+.testimonials-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.testimonials-slider {
+    max-width: 800px;
+    margin: 50px auto 0;
+    position: relative;
+}
+
+.testimonial {
+    display: none;
+    background-color: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.testimonial-content p {
+    font-size: 20px;
+    line-height: 1.8;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-author img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-author h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #2a2a2a;
+}
+
+.testimonial-author p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+    font-style: normal;
+}
+
+.slider-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.slider-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.slider-btn:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.slider-dots {
+    display: flex;
+    gap: 15px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background-color: #e74c3c;
+    transform: scale(1.2);
+}
+
+/* Приєднуйтесь */
+.join-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.join-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.join-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.join-form {
+    display: flex;
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.join-form input {
+    flex: 1;
+    padding: 18px 25px;
+    border: 2px solid #e74c3c;
+    border-radius: 50px 0 0 50px;
+    font-size: 16px;
+    outline: none;
+}
+
+.join-form button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0 40px;
+    border-radius: 0 50px 50px 0;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.join-form button:hover {
+    background-color: #e74c3c;
+}
+
+.join-note {
+    font-size: 16px;
+    color: #777;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Адаптивність */
+@media (max-width: 992px) {
+    .story-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .story-image img {
+        height: 400px;
+    }
+    
+    .about-title {
+        font-size: 38px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+}
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 80px 0 60px;
+    }
+    
+    .about-title {
+        font-size: 32px;
+    }
+    
+    .about-subtitle {
+        font-size: 18px;
+    }
+    
+    .mission-grid,
+    .team-grid,
+    .stats-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    
+    .testimonial {
+        padding: 30px 20px;
+    }
+    
+    .join-form {
+        flex-direction: column;
+    }
+    
+    .join-form input {
+        border-radius: 50px;
+        margin-bottom: 15px;
+    }
+    
+    .join-form button {
+        border-radius: 50px;
+        padding: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-title {
+        font-size: 28px;
+    }
+    
+    .stat-number {
+        font-size: 48px;
+    }
+    
+    .team-member {
+        padding: 20px;
+    }
+}
+/* ===== JS animations ===== */
+.mission-card,
+.team-member,
+.stat-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.6s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Success message */
+.success-message {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
