@@ -1,0 +1,594 @@
+/* Стилі сторінки контактів */
+
+/* Заголовок */
+.contact-header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding-top: 40px;
+}
+
+.page-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #2a2a2a;
+    margin-bottom: 15px;
+}
+
+.page-subtitle {
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Основний контент */
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 992px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Інформаційна секція */
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.contact-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+}
+
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #ffffff 0%, #f1ebe9 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+    font-size: 28px;
+}
+
+.contact-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color:#e74c3c;
+}
+
+.contact-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.contact-hours, .contact-note {
+    font-size: 14px;
+    color: #888;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Карта */
+.map-section {
+    margin-top: 40px;
+}
+
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #2a2a2a;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #e74c3c, #fffcfc);
+    border-radius: 2px;
+}
+
+.map-container {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    height: 300px;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 20px;
+}
+
+.map-placeholder i {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #e74c3c;
+}
+
+.map-coordinates {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+/* Форма зворотного зв'язку */
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.form-subtitle {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2a2a2a;
+    font-size: 15px;
+}
+
+.form-group label::after {
+    content: ' *';
+    color: #e74c3c;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 15px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #e74c3c;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(230, 57, 70, 0.1);
+}
+
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error {
+    border-color: #e74c3c;
+    background-color: #fff5f5;
+}
+.error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+    min-height: 20px;
+}
+
+.checkbox-group {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #e74c3c;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.checkbox-group label::after {
+    content: '';
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.submit-btn {
+    flex: 1;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 18px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #e74c3c;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
+}
+
+.submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.reset-btn {
+    padding: 18px 25px;
+    background-color: #f5f5f5;
+    color: #666;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+    background-color: #eee;
+    color: #333;
+}
+
+/* FAQ секція */
+.faq-section {
+    margin-bottom: 80px;
+}
+
+.section-subtitle {
+    color: #666;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: white;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+    width: 100%;
+    padding: 25px 30px;
+    background: none;
+    border: none;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2a2a2a;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #f9f9f9;
+}
+
+.faq-question i {
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-answer.active {
+    padding: 0 30px 30px;
+    max-height: 500px;
+}
+
+.faq-answer p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Команда */
+.team-section {
+    margin-bottom: 80px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.team-member {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.member-photo {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #e4dede 0%, #fad0c4 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: white;
+    font-size: 50px;
+}
+
+.team-member h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2a2a2a;
+}
+
+.member-role {
+    color: #e74c3c;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.member-bio {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.member-contact a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #f5f5f5;
+    color: #e74c3c;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.member-contact a:hover {
+    background-color: #e74c3c;
+    color: white;
+    transform: scale(1.1);
+}
+/* Модальне вікно успіху */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.success-modal {
+    background-color: white;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #555;
+    cursor: pointer;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+    background-color: #f5f5f5;
+    color: #e74c3c;
+}
+
+.success-icon {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.success-icon i {
+    font-size: 80px;
+    color: #4CAF50;
+}
+
+.success-modal h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #2a2a2a;
+}
+
+.success-modal p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn-ok {
+    display: block;
+    margin: 0 auto;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-ok:hover {
+    background-color: #e74c3c;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .contact-info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .form-container {
+        padding: 30px 20px;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .submit-btn, .reset-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 32px;
+    }
+    
+    .section-title {
+        font-size: 26px;
+    }
+    
+    .contact-card {
+        padding: 20px;
+    }
+}
